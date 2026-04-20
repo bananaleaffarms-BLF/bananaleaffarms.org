@@ -617,83 +617,71 @@ footer{background:#1A3008;padding:52px 5% 26px}
     <p class="lbl">Our Story in Photos</p>
     <h2 class="ttl">Photo Gallery</h2>
     <div class="dvdr"></div>
-    <p class="bdy">Select a category to explore our events, workshops, and community moments.</p>
+    <p class="bdy">
+      Select a category to explore our events, workshops, and community moments.
+    </p>
+
+    <!-- Filters -->
     <div class="gal-filters">
-      <button class="gal-btn active" onclick="filterGal('all',this)">🌿 All</button>
-      <button class="gal-btn" onclick="filterGal('bees',this)">🐝 Beekeeping</button>
-      <button class="gal-btn" onclick="filterGal('chickens',this)">🐓 Chickens</button>
-      <button class="gal-btn" onclick="filterGal('goats',this)">🐐 Goats</button>
-      <button class="gal-btn" onclick="filterGal('compost',this)">🌱 Compost &amp; Soil</button>
-      <button class="gal-btn" onclick="filterGal('garden',this)">🌿 Garden</button>
-      <button class="gal-btn" onclick="filterGal('food',this)">🫙 Food &amp; Preservation</button>
-      <button class="gal-btn" onclick="filterGal('events',this)">📅 Events</button>
+      <button class="gal-btn active" onclick="filterGal('all', this)">🌿 All</button>
+      <button class="gal-btn" onclick="filterGal('bees', this)">🐝 Beekeeping</button>
+      <button class="gal-btn" onclick="filterGal('chickens', this)">🐓 Chickens</button>
+      <button class="gal-btn" onclick="filterGal('goats', this)">🐐 Goats</button>
+      <button class="gal-btn" onclick="filterGal('compost', this)">🌱 Compost &amp; Soil</button>
+      <button class="gal-btn" onclick="filterGal('garden', this)">🌿 Garden</button>
+      <button class="gal-btn" onclick="filterGal('food', this)">🫙 Food &amp; Preservation</button>
+      <button class="gal-btn" onclick="filterGal('events', this)">📅 Events</button>
     </div>
+
+    <!-- Grid -->
     <div class="gal-grid" id="galGrid">
-<div class="gallery-item" data-cat="bees"><div class="gallery-img"><img src="images/bees/1703bff9-75eb-4ab6-a6d5-f49c2c6ead94.jpg" alt="Hive Inspection" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐝</span></div>'"/></div><p class="gallery-caption">Hive Inspection</p></div>
-<div class="gallery-item" data-cat="bees"><div class="gallery-img"><img src="images/bees/20260315_185747.jpg" alt="Evening Hive Check" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐝</span></div>'"/></div><p class="gallery-caption">Evening Hive Check</p></div>
-<div class="gallery-item" data-cat="bees"><div class="gallery-img"><img src="images/bees/20260411_121030.jpg" alt="Spring Hive Dive" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐝</span></div>'"/></div><p class="gallery-caption">Spring Hive Dive</p></div>
-<div class="gallery-item" data-cat="bees"><div class="gallery-img"><img src="images/bees/20260411_121103.jpg" alt="Frame Inspection" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐝</span></div>'"/></div><p class="gallery-caption">Frame Inspection</p></div>
-<div class="gallery-item" data-cat="bees"><div class="gallery-img"><img src="images/bees/20260411_193848.jpg" alt="After the Hive" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐝</span></div>'"/></div><p class="gallery-caption">After the Hive</p></div>
-<div class="gallery-item" data-cat="bees"><div class="gallery-img"><img src="images/bees/IMG_20260315_173909.jpg" alt="Beekeeping Workshop" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐝</span></div>'"/></div><p class="gallery-caption">Beekeeping Workshop</p></div>
-<div class="gallery-item" data-cat="bees"><div class="gallery-img"><img src="images/bees/Screenshot_20260418_011720_Gallery.jpg" alt="Apiary — BLF" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐝</span></div>'"/></div><p class="gallery-caption">Apiary — BLF</p></div>
-<div class="gallery-item" data-cat="bees"><div class="gallery-img"><img src="images/bees/Screenshot_20260418_013319_Canva.jpg" alt="Hive Activity" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐝</span></div>'"/></div><p class="gallery-caption">Hive Activity</p></div>
-<div class="gallery-item" data-cat="chickens"><div class="gallery-img"><img src="images/chickens/20250703_172115.jpg" alt="Backyard Chickens" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐓</span></div>'"/></div><p class="gallery-caption">Backyard Chickens</p></div>
-<div class="gallery-item" data-cat="chickens"><div class="gallery-img"><img src="images/chickens/20250705_124756.jpg" alt="Chicken Coop Day" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐓</span></div>'"/></div><p class="gallery-caption">Chicken Coop Day</p></div>
-<div class="gallery-item" data-cat="chickens"><div class="gallery-img"><img src="images/chickens/20260201_125647.jpg" alt="Winter Chickens" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐓</span></div>'"/></div><p class="gallery-caption">Winter Chickens</p></div>
-<div class="gallery-item" data-cat="chickens"><div class="gallery-img"><img src="images/chickens/20260214_142748.jpg" alt="Valentine&#39;s Day on the Farm" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐓</span></div>'"/></div><p class="gallery-caption">Valentine's Day on the Farm</p></div>
-<div class="gallery-item" data-cat="chickens"><div class="gallery-img"><img src="images/chickens/20260214_142855.jpg" alt="Farm Friends" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐓</span></div>'"/></div><p class="gallery-caption">Farm Friends</p></div>
-<div class="gallery-item" data-cat="chickens"><div class="gallery-img"><img src="images/chickens/Screenshot_20260418_011230_Gallery.jpg" alt="Flock Life" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐓</span></div>'"/></div><p class="gallery-caption">Flock Life</p></div>
-<div class="gallery-item" data-cat="chickens"><div class="gallery-img"><img src="images/chickens/Screenshot_20260418_011310_Gallery.jpg" alt="Chicken Garden" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐓</span></div>'"/></div><p class="gallery-caption">Chicken Garden</p></div>
-<div class="gallery-item" data-cat="goats"><div class="gallery-img"><img src="images/goats/20250809_122948.jpg" alt="Bell & Jasmine" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐐</span></div>'"/></div><p class="gallery-caption">Bell & Jasmine</p></div>
-<div class="gallery-item" data-cat="goats"><div class="gallery-img"><img src="images/goats/20250826_082056.jpg" alt="Morning with the Goats" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐐</span></div>'"/></div><p class="gallery-caption">Morning with the Goats</p></div>
-<div class="gallery-item" data-cat="goats"><div class="gallery-img"><img src="images/goats/20250826_182157.jpg" alt="Evening Pasture" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐐</span></div>'"/></div><p class="gallery-caption">Evening Pasture</p></div>
-<div class="gallery-item" data-cat="compost"><div class="gallery-img"><img src="images/compost/20260213_115902.jpg" alt="Compost Build" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🌱</span></div>'"/></div><p class="gallery-caption">Compost Build</p></div>
-<div class="gallery-item" data-cat="compost"><div class="gallery-img"><img src="images/compost/20260213_120124.jpg" alt="Healthy Soil" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🌱</span></div>'"/></div><p class="gallery-caption">Healthy Soil</p></div>
-<div class="gallery-item" data-cat="compost"><div class="gallery-img"><img src="images/compost/20260214_142744.jpg" alt="Worm Compost" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🌱</span></div>'"/></div><p class="gallery-caption">Worm Compost</p></div>
-<div class="gallery-item" data-cat="compost"><div class="gallery-img"><img src="images/compost/20260214_142831.jpg" alt="Vermicomposting" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🌱</span></div>'"/></div><p class="gallery-caption">Vermicomposting</p></div>
-<div class="gallery-item" data-cat="compost"><div class="gallery-img"><img src="images/compost/20260417_171647.jpg" alt="April Compost" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🌱</span></div>'"/></div><p class="gallery-caption">April Compost</p></div>
-<div class="gallery-item" data-cat="compost"><div class="gallery-img"><img src="images/compost/20260417_173308.jpg" alt="Soil Building" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🌱</span></div>'"/></div><p class="gallery-caption">Soil Building</p></div>
-<div class="gallery-item" data-cat="garden"><div class="gallery-img"><img src="images/garden/20251019_214544.jpg" alt="Harvest Season" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🌿</span></div>'"/></div><p class="gallery-caption">Harvest Season</p></div>
-<div class="gallery-item" data-cat="garden"><div class="gallery-img"><img src="images/garden/20251118_163713.jpg" alt="November Garden" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🌿</span></div>'"/></div><p class="gallery-caption">November Garden</p></div>
-<div class="gallery-item" data-cat="garden"><div class="gallery-img"><img src="images/garden/20251207_092032.jpg" alt="December Garden" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🌿</span></div>'"/></div><p class="gallery-caption">December Garden</p></div>
-<div class="gallery-item" data-cat="garden"><div class="gallery-img"><img src="images/garden/20260113_165728.jpg" alt="January Garden" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🌿</span></div>'"/></div><p class="gallery-caption">January Garden</p></div>
-<div class="gallery-item" data-cat="garden"><div class="gallery-img"><img src="images/garden/Screenshot_20260418_011537_Gallery.jpg" alt="Spring Planting" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🌿</span></div>'"/></div><p class="gallery-caption">Spring Planting</p></div>
-<div class="gallery-item" data-cat="garden"><div class="gallery-img"><img src="images/garden/Screenshot_20260418_011658_Gallery.jpg" alt="Garden Beds" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🌿</span></div>'"/></div><p class="gallery-caption">Garden Beds</p></div>
-<div class="gallery-item" data-cat="garden"><div class="gallery-img"><img src="images/garden/Screenshot_20260418_012209_Gallery.jpg" alt="Community Plot" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🌿</span></div>'"/></div><p class="gallery-caption">Community Plot</p></div>
-<div class="gallery-item" data-cat="garden"><div class="gallery-img"><img src="images/garden/Screenshot_20260418_012219_Gallery.jpg" alt="Growing Season" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🌿</span></div>'"/></div><p class="gallery-caption">Growing Season</p></div>
-<div class="gallery-item" data-cat="garden"><div class="gallery-img"><img src="images/garden/Screenshot_20260418_012226_Gallery.jpg" alt="Garden Life" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🌿</span></div>'"/></div><p class="gallery-caption">Garden Life</p></div>
-<div class="gallery-item" data-cat="garden"><div class="gallery-img"><img src="images/garden/Screenshot_20260418_012249_Gallery.jpg" alt="Kyle&#39;s Temple Garden" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🌿</span></div>'"/></div><p class="gallery-caption">Kyle's Temple Garden</p></div>
-<div class="gallery-item" data-cat="food"><div class="gallery-img"><img src="images/food preservation/20251012_171048.jpg" alt="October Preservation" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🫙</span></div>'"/></div><p class="gallery-caption">October Preservation</p></div>
-<div class="gallery-item" data-cat="food"><div class="gallery-img"><img src="images/food preservation/20251031_211007.jpg" alt="Halloween Harvest" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🫙</span></div>'"/></div><p class="gallery-caption">Halloween Harvest</p></div>
-<div class="gallery-item" data-cat="food"><div class="gallery-img"><img src="images/food preservation/20251031_211019.jpg" alt="Preservation Class" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🫙</span></div>'"/></div><p class="gallery-caption">Preservation Class</p></div>
-<div class="gallery-item" data-cat="food"><div class="gallery-img"><img src="images/food preservation/20260126_201841.jpg" alt="January Ferments" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🫙</span></div>'"/></div><p class="gallery-caption">January Ferments</p></div>
-<div class="gallery-item" data-cat="food"><div class="gallery-img"><img src="images/food preservation/20260204_083917.jpg" alt="February Food Prep" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🫙</span></div>'"/></div><p class="gallery-caption">February Food Prep</p></div>
-<div class="gallery-item" data-cat="food"><div class="gallery-img"><img src="images/food preservation/Screenshot_20260418_012830_Nextdoor.jpg" alt="Community Food Share" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🫙</span></div>'"/></div><p class="gallery-caption">Community Food Share</p></div>
-<div class="gallery-item" data-cat="food"><div class="gallery-img"><img src="images/food preservation/Screenshot_20260418_012848_Nextdoor.jpg" alt="Food Distribution" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🫙</span></div>'"/></div><p class="gallery-caption">Food Distribution</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/20250814_204823.jpg" alt="Cook Academy Graduation" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">Cook Academy Graduation</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/20251123_111142.jpg" alt="November Community Event" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">November Community Event</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/20251213_133152.jpg" alt="December Gathering" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">December Gathering</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/20260224_105317.jpg" alt="Community Class" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">Community Class</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/20260308_121006.jpg" alt="March Event" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">March Event</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/20260308_121012.jpg" alt="Spring Workshop" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">Spring Workshop</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/20260314_114551.jpg" alt="Garden Tour Prep" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">Garden Tour Prep</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/20260315_112711.jpg" alt="Vallejo Garden Tour" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">Vallejo Garden Tour</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/IMG_0934 (1).jpg" alt="Community Day" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">Community Day</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/IMG_0938.jpg" alt="Workshop Participants" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">Workshop Participants</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/IMG_0939.jpg" alt="Learning Together" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">Learning Together</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/Screenshot_20260418_011134_Gallery.jpg" alt="Community Moment" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">Community Moment</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/Screenshot_20260418_011643_Gallery.jpg" alt="Farm Event" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">Farm Event</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/Screenshot_20260418_012307_Gallery.jpg" alt="Workshop Day" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">Workshop Day</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/Screenshot_20260418_012330_Gallery.jpg" alt="Gathering" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">Gathering</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/Screenshot_20260418_012420_Gallery.jpg" alt="Community Learning" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">Community Learning</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/Screenshot_20260418_012529_Gallery.jpg" alt="Event Highlights" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">Event Highlights</p></div>
-<div class="gallery-item" data-cat="events"><div class="gallery-img"><img src="images/events/Screenshot_20260418_012553_Gallery.jpg" alt="Together" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>📅</span></div>'"/></div><p class="gallery-caption">Together</p></div>
+
+      <!-- EXAMPLE ITEM (your existing items are fine) -->
+      <div class="gallery-item" data-cat="bees">
+        <div class="gallery-img">
+          <img src="images/bees/1703bff9-75eb-4ab6-a6d5-f49c2c6ead94.jpg"
+               alt="Hive Inspection"
+               loading="lazy"
+               onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐝</span></div>'">
+        </div>
+        <p class="gallery-caption">Hive Inspection</p>
+      </div>
+
+      <!-- KEEP ALL YOUR OTHER gallery-item BLOCKS EXACTLY AS THEY ARE -->
+
     </div>
+
     <div class="gal-note">
-      <strong>📷 Adding photos:</strong> Upload to correct <code>images/FOLDER/</code> in GitHub. Copy a gallery block, replace <code>gallery-ph</code> div with <code>&lt;img src="images/FOLDER/FILENAME.jpg" loading="lazy"/&gt;</code>, set <code>data-cat</code> to match folder name, update caption.
+      <strong>📷 Adding photos:</strong>
+      Upload to the correct <code>images/FOLDER/</code> in GitHub.
+      Copy an existing <code>.gallery-item</code>, update:
+      <ul>
+        <li><code>src</code></li>
+        <li><code>data-cat</code></li>
+        <li>caption text</li>
+      </ul>
     </div>
   </div>
 </section>
+
+<!-- ✅ REQUIRED SCRIPT -->
+<script>
+function filterGal(category, btn) {
+  // toggle active button
+  document.querySelectorAll('.gal-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+
+  // filter items
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    const itemCat = item.getAttribute('data-cat');
+    if (category === 'all' || itemCat === category) {
+      item.style.display = '';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+</script>
 
 <!-- ══ HONEYCOMB PUZZLE ══ -->
 <section id="honeycomb-puzzle">
