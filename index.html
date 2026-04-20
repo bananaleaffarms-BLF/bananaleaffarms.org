@@ -228,17 +228,71 @@ section{padding:88px 5%}
 .stp p,.stp a{font-size:.83rem;color:var(--txtm);line-height:1.5}
 .stp a{color:var(--lav)}
 
-/* ══ CREDENTIALS — hex grid ══ */
-#credentials{background:var(--cream)}
-.cred-intro{display:flex;align-items:center;gap:.7rem;margin-bottom:2rem;color:var(--lav);font-size:.85rem;font-weight:700;letter-spacing:.04em}
-.cred-intro::before{content:"🍯";font-size:1.2rem}
-.cred-hex-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem;margin-top:.5rem}
-.cred-hex{background:#fff;border-radius:var(--r);border:1px solid rgba(155,114,207,.18);padding:1.4rem 1.6rem;display:flex;align-items:center;gap:1rem;text-decoration:none;color:var(--gd);transition:all .3s;cursor:pointer}
-.cred-hex:hover{border-color:var(--lav);box-shadow:0 8px 24px rgba(155,114,207,.15);transform:translateY(-2px)}
-.cred-hex-icon{font-size:1.8rem;flex-shrink:0}
-.cred-hex-label{font-size:.88rem;font-weight:700;line-height:1.3;color:var(--gd)}
-.cred-hex-badge{display:inline-block;font-size:.68rem;font-weight:700;background:var(--lavp);color:var(--lav);padding:.18rem .6rem;border-radius:50px;margin-top:.3rem;text-transform:uppercase;letter-spacing:.05em}
-.cred-hex:hover .cred-hex-badge{background:var(--lav);color:#fff}
+══ CREDENTIALS — card layout (Website #2) ══ */
+#credentials {
+  background: var(--cream);
+}
+
+.cred-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .cred-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cred-card {
+  background: #fff;
+  border-radius: var(--r);
+  padding: 1.4rem 1.4rem 1.6rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  text-decoration: none;
+  color: var(--gd);
+  display: block;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.cred-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(0,0,0,.08);
+}
+
+.cred-icon {
+  font-size: 1.6rem;
+  margin-bottom: .4rem;
+}
+
+.cred-card h3 {
+  font-size: .95rem;
+  font-weight: 700;
+  margin: .2rem 0 .3rem;
+  line-height: 1.3;
+}
+
+.cred-badge {
+  display: inline-block;
+  font-size: .68rem;
+  font-weight: 700;
+  padding: .2rem .6rem;
+  border-radius: 999px;
+  background: var(--lavp);
+  color: var(--lav);
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.cred-card p {
+  font-size: .85rem;
+  line-height: 1.45;
+  margin: 0;
+}
 
 /* ══ CONSULTING — accordion ══ */
 #consulting{background:linear-gradient(135deg,var(--gd),#3A6B1E)}
