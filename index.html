@@ -623,65 +623,106 @@ footer{background:#1A3008;padding:52px 5% 26px}
 
     <!-- Filters -->
     <div class="gal-filters">
-      <button class="gal-btn active" onclick="filterGal('all', this)">🌿 All</button>
-      <button class="gal-btn" onclick="filterGal('bees', this)">🐝 Beekeeping</button>
-      <button class="gal-btn" onclick="filterGal('chickens', this)">🐓 Chickens</button>
-      <button class="gal-btn" onclick="filterGal('goats', this)">🐐 Goats</button>
-      <button class="gal-btn" onclick="filterGal('compost', this)">🌱 Compost &amp; Soil</button>
-      <button class="gal-btn" onclick="filterGal('garden', this)">🌿 Garden</button>
-      <button class="gal-btn" onclick="filterGal('food', this)">🫙 Food &amp; Preservation</button>
-      <button class="gal-btn" onclick="filterGal('events', this)">📅 Events</button>
+      <button class="gal-btn active" onclick="filterGal('all',this)">🌿 All</button>
+      <button class="gal-btn" onclick="filterGal('bees',this)">🐝 Beekeeping</button>
+      <button class="gal-btn" onclick="filterGal('chickens',this)">🐓 Chickens</button>
+      <button class="gal-btn" onclick="filterGal('goats',this)">🐐 Goats</button>
+      <button class="gal-btn" onclick="filterGal('compost',this)">🌱 Compost &amp; Soil</button>
+      <button class="gal-btn" onclick="filterGal('garden',this)">🌿 Garden</button>
+      <button class="gal-btn" onclick="filterGal('food',this)">🫙 Food &amp; Preservation</button>
+      <button class="gal-btn" onclick="filterGal('events',this)">📅 Events</button>
     </div>
 
     <!-- Grid -->
-    <div class="gal-grid" id="galGrid">
+    <div class="gal-grid">
 
-      <!-- EXAMPLE ITEM (your existing items are fine) -->
-      <div class="gallery-item" data-cat="bees">
-        <div class="gallery-img">
-          <img src="images/bees/1703bff9-75eb-4ab6-a6d5-f49c2c6ead94.jpg"
-               alt="Hive Inspection"
-               loading="lazy"
-               onerror="this.parentElement.innerHTML='<div class=&quot;gallery-ph&quot;><span>🐝</span></div>'">
-        </div>
-        <p class="gallery-caption">Hive Inspection</p>
-      </div>
+      <!-- 🐝 BEES -->
+      <div class="gallery-item" data-cat="bees"><img src="images/bees/1703bff9-75eb-4ab6-a6d5-f49c2c6ead94.jpg" loading="lazy"><p>Hive Inspection</p></div>
+      <div class="gallery-item" data-cat="bees"><img src="images/bees/20260315_185747.jpg" loading="lazy"><p>Evening Hive Check</p></div>
+      <div class="gallery-item" data-cat="bees"><img src="images/bees/20260411_121030.jpg" loading="lazy"><p>Spring Hive Dive</p></div>
+      <div class="gallery-item" data-cat="bees"><img src="images/bees/20260411_121103.jpg" loading="lazy"><p>Frame Inspection</p></div>
+      <div class="gallery-item" data-cat="bees"><img src="images/bees/20260411_193848.jpg" loading="lazy"><p>After the Hive</p></div>
+      <div class="gallery-item" data-cat="bees"><img src="images/bees/IMG_20260315_173909.jpg" loading="lazy"><p>Beekeeping Workshop</p></div>
+      <div class="gallery-item" data-cat="bees"><img src="images/bees/Screenshot_20260418_011720_Gallery.jpg" loading="lazy"><p>Apiary</p></div>
+      <div class="gallery-item" data-cat="bees"><img src="images/bees/Screenshot_20260418_013319_Canva.jpg" loading="lazy"><p>Hive Activity</p></div>
 
-      <!-- KEEP ALL YOUR OTHER gallery-item BLOCKS EXACTLY AS THEY ARE -->
+      <!-- 🐓 CHICKENS -->
+      <div class="gallery-item" data-cat="chickens"><img src="images/chickens/20250703_172115.jpg" loading="lazy"><p>Backyard Chickens</p></div>
+      <div class="gallery-item" data-cat="chickens"><img src="images/chickens/20250705_124756.jpg" loading="lazy"><p>Chicken Coop Day</p></div>
+      <div class="gallery-item" data-cat="chickens"><img src="images/chickens/20260201_125647.jpg" loading="lazy"><p>Winter Chickens</p></div>
+      <div class="gallery-item" data-cat="chickens"><img src="images/chickens/20260214_142748.jpg" loading="lazy"><p>Farm Day</p></div>
+      <div class="gallery-item" data-cat="chickens"><img src="images/chickens/20260214_142855.jpg" loading="lazy"><p>Farm Friends</p></div>
+      <div class="gallery-item" data-cat="chickens"><img src="images/chickens/Screenshot_20260418_011230_Gallery.jpg" loading="lazy"><p>Flock Life</p></div>
+      <div class="gallery-item" data-cat="chickens"><img src="images/chickens/Screenshot_20260418_011310_Gallery.jpg" loading="lazy"><p>Chicken Garden</p></div>
 
-    </div>
+      <!-- 🐐 GOATS -->
+      <div class="gallery-item" data-cat="goats"><img src="images/goats/20250809_122948.jpg" loading="lazy"><p>Bell &amp; Jasmine</p></div>
+      <div class="gallery-item" data-cat="goats"><img src="images/goats/20250826_082056.jpg" loading="lazy"><p>Morning with the Goats</p></div>
 
-    <div class="gal-note">
-      <strong>📷 Adding photos:</strong>
-      Upload to the correct <code>images/FOLDER/</code> in GitHub.
-      Copy an existing <code>.gallery-item</code>, update:
-      <ul>
-        <li><code>src</code></li>
-        <li><code>data-cat</code></li>
-        <li>caption text</li>
-      </ul>
+      <!-- 🌱 COMPOST -->
+      <div class="gallery-item" data-cat="compost"><img src="images/compost/20260213_115902.jpg" loading="lazy"><p>Compost Build</p></div>
+      <div class="gallery-item" data-cat="compost"><img src="images/compost/20260213_120124.jpg" loading="lazy"><p>Healthy Soil</p></div>
+      <div class="gallery-item" data-cat="compost"><img src="images/compost/20260214_142744.jpg" loading="lazy"><p>Worm Compost</p></div>
+      <div class="gallery-item" data-cat="compost"><img src="images/compost/20260214_142831.jpg" loading="lazy"><p>Vermicomposting</p></div>
+      <div class="gallery-item" data-cat="compost"><img src="images/compost/20260417_171647.jpg" loading="lazy"><p>April Compost</p></div>
+      <div class="gallery-item" data-cat="compost"><img src="images/compost/20260417_173308.jpg" loading="lazy"><p>Soil Building</p></div>
+
+      <!-- 🌿 GARDEN -->
+      <div class="gallery-item" data-cat="garden"><img src="images/garden/20251019_214544.jpg" loading="lazy"><p>Harvest Season</p></div>
+      <div class="gallery-item" data-cat="garden"><img src="images/garden/20251118_163713.jpg" loading="lazy"><p>November Garden</p></div>
+      <div class="gallery-item" data-cat="garden"><img src="images/garden/20251207_092032.jpg" loading="lazy"><p>December Garden</p></div>
+      <div class="gallery-item" data-cat="garden"><img src="images/garden/20260113_165728.jpg" loading="lazy"><p>January Garden</p></div>
+      <div class="gallery-item" data-cat="garden"><img src="images/garden/Screenshot_20260418_011537_Gallery.jpg" loading="lazy"><p>Spring Planting</p></div>
+      <div class="gallery-item" data-cat="garden"><img src="images/garden/Screenshot_20260418_011658_Gallery.jpg" loading="lazy"><p>Garden Beds</p></div>
+      <div class="gallery-item" data-cat="garden"><img src="images/garden/Screenshot_20260418_012209_Gallery.jpg" loading="lazy"><p>Community Plot</p></div>
+      <div class="gallery-item" data-cat="garden"><img src="images/garden/Screenshot_20260418_012219_Gallery.jpg" loading="lazy"><p>Growing Season</p></div>
+      <div class="gallery-item" data-cat="garden"><img src="images/garden/Screenshot_20260418_012226_Gallery.jpg" loading="lazy"><p>Garden Life</p></div>
+      <div class="gallery-item" data-cat="garden"><img src="images/garden/Screenshot_20260418_012249_Gallery.jpg" loading="lazy"><p>Temple Garden</p></div>
+
+      <!-- 🫙 FOOD -->
+      <div class="gallery-item" data-cat="food"><img src="images/food preservation/20251012_171048.jpg" loading="lazy"><p>October Preservation</p></div>
+      <div class="gallery-item" data-cat="food"><img src="images/food preservation/20251031_211007.jpg" loading="lazy"><p>Halloween Harvest</p></div>
+      <div class="gallery-item" data-cat="food"><img src="images/food preservation/20251031_211019.jpg" loading="lazy"><p>Preservation Class</p></div>
+      <div class="gallery-item" data-cat="food"><img src="images/food preservation/20260126_201841.jpg" loading="lazy"><p>January Ferments</p></div>
+      <div class="gallery-item" data-cat="food"><img src="images/food preservation/20260204_083917.jpg" loading="lazy"><p>February Food Prep</p></div>
+      <div class="gallery-item" data-cat="food"><img src="images/food preservation/Screenshot_20260418_012830_Nextdoor.jpg" loading="lazy"><p>Community Food Share</p></div>
+      <div class="gallery-item" data-cat="food"><img src="images/food preservation/Screenshot_20260418_012848_Nextdoor.jpg" loading="lazy"><p>Food Distribution</p></div>
+
+      <!-- 📅 EVENTS -->
+      <div class="gallery-item" data-cat="events"><img src="images/events/20250814_204823.jpg" loading="lazy"><p>Cook Academy Graduation</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/20251123_111142.jpg" loading="lazy"><p>November Event</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/20251213_133152.jpg" loading="lazy"><p>December Gathering</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/20260224_105317.jpg" loading="lazy"><p>Community Class</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/20260308_121006.jpg" loading="lazy"><p>March Event</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/20260308_121012.jpg" loading="lazy"><p>Spring Workshop</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/20260314_114551.jpg" loading="lazy"><p>Garden Tour Prep</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/20260315_112711.jpg" loading="lazy"><p>Vallejo Garden Tour</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/IMG_0934 (1).jpg" loading="lazy"><p>Community Day</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/IMG_0938.jpg" loading="lazy"><p>Workshop Participants</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/IMG_0939.jpg" loading="lazy"><p>Learning Together</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/Screenshot_20260418_011134_Gallery.jpg" loading="lazy"><p>Community Moment</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/Screenshot_20260418_011643_Gallery.jpg" loading="lazy"><p>Farm Event</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/Screenshot_20260418_012307_Gallery.jpg" loading="lazy"><p>Workshop Day</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/Screenshot_20260418_012330_Gallery.jpg" loading="lazy"><p>Gathering</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/Screenshot_20260418_012420_Gallery.jpg" loading="lazy"><p>Community Learning</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/Screenshot_20260418_012529_Gallery.jpg" loading="lazy"><p>Event Highlights</p></div>
+      <div class="gallery-item" data-cat="events"><img src="images/events/Screenshot_20260418_012553_Gallery.jpg" loading="lazy"><p>Together</p></div>
+
     </div>
   </div>
 </section>
 
-<!-- ✅ REQUIRED SCRIPT -->
 <script>
-function filterGal(category, btn) {
-  // toggle active button
+function filterGal(cat, btn) {
   document.querySelectorAll('.gal-btn').forEach(b => b.classList.remove('active'));
-  if (btn) btn.classList.add('active');
+  btn.classList.add('active');
 
-  // filter items
   document.querySelectorAll('.gallery-item').forEach(item => {
-    const itemCat = item.getAttribute('data-cat');
-    if (category === 'all' || itemCat === category) {
-      item.style.display = '';
-    } else {
-      item.style.display = 'none';
-    }
+    item.style.display = (cat === 'all' || item.dataset.cat === cat) ? '' : 'none';
   });
 }
 </script>
+
 
 <!-- ══ HONEYCOMB PUZZLE ══ -->
 <section id="honeycomb-puzzle">
